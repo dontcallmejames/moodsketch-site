@@ -1,0 +1,18 @@
+---
+export interface Props {
+  class?: string;
+  size?: number;
+  variant?: 'light' | 'dark';
+  opacity?: string;
+  textSize?: string;
+}
+const { class: className = '', size = 28, variant = 'light', opacity = '1', textSize = 'inherit' } = Astro.props;
+
+const textColor = variant === 'light' ? 'text-white' : 'text-ink';
+const fill = variant === 'light' ? 'white' : '#1C1C2E';
+---
+
+<a href="https://sketchkit.app" class={`inline-flex items-center gap-1 ${className}`} style={`opacity: ${opacity}`}>
+  <img src="/logo.png" alt="" aria-hidden="true" width={size} height={size} style={`display:block;width:${size}px;height:${size}px;object-fit:cover;object-position:center;clip-path:inset(1px 0 0 1px);`} />
+  <span class={`font-display font-bold ${textColor} tracking-tight leading-none`} style={`font-size: ${textSize}`} >SketchKit</span>
+</a>

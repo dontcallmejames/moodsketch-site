@@ -1,6 +1,6 @@
 ---
-import '../styles/global.css';
 import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
 ---
 <Base
   title="MoodSketch — Your Daily Creative Ritual"
@@ -10,8 +10,10 @@ import Base from '../layouts/Base.astro';
 
     <!-- Nav -->
     <nav class="sticky top-0 z-50 bg-mood-warm-white/90 backdrop-blur border-b border-mood-coral/10">
-      <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-center">
-        <span class='font-display font-bold text-xl text-ink'>MoodSketch</span>
+      <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="https://sketchkit.app" class="text-sm font-medium text-sketch-gray hover:text-ink transition-colors">← SketchKit</a>
+        <Logo size={36} variant="dark" />
+        <a href="https://sketchkit.app/fieldsketch" class="text-sm font-medium text-sketch-gray hover:text-ink transition-colors">FieldSketch →</a>
       </div>
     </nav>
 
@@ -165,10 +167,10 @@ import Base from '../layouts/Base.astro';
     <!-- Footer -->
     <footer class="bg-ink py-12 px-6">
       <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <span class='font-display font-bold text-xl text-white/70'>MoodSketch</span>
+        <Logo size={36} opacity="0.7" />
         <div class="flex items-center gap-8">
-          <a href="/" class="text-sm text-white/40 hover:text-white/80 transition-colors">Home</a>
-          <a href="/fieldsketch" class="text-sm text-white/40 hover:text-white/80 transition-colors">FieldSketch</a>
+          <a href="https://sketchkit.app" class="text-sm text-white/40 hover:text-white/80 transition-colors">Home</a>
+          <a href="https://sketchkit.app/fieldsketch" class="text-sm text-white/40 hover:text-white/80 transition-colors">FieldSketch</a>
         </div>
         <p class="text-sm text-white/30">© 2026 SketchKit</p>
       </div>
