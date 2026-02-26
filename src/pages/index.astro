@@ -1,0 +1,178 @@
+---
+import '../styles/global.css';
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="MoodSketch — Your Daily Creative Ritual"
+  description="Draw your mood instead of writing about it. MoodSketch is a daily sketch journal app with prompts, expressive tools, and a beautiful creative archive."
+>
+  <div class="bg-mood-warm-white min-h-screen">
+
+    <!-- Nav -->
+    <nav class="sticky top-0 z-50 bg-mood-warm-white/90 backdrop-blur border-b border-mood-coral/10">
+      <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-center">
+        <span class='font-display font-bold text-xl text-ink'>MoodSketch</span>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-mood-coral to-mood-marigold text-white pt-24 pb-32 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-white/70 text-sm font-medium tracking-widest uppercase mb-6">For iPhone & Android</p>
+        <div class="flex justify-center mb-8">
+          <img src="/moodsketch-icon.png" alt="MoodSketch app icon"
+               class="w-28 h-28 rounded-[28%] shadow-2xl shadow-black/30" />
+        </div>
+        <h1 class="font-display font-bold tracking-tight text-7xl md:text-8xl leading-none mb-6">MoodSketch</h1>
+        <p class="text-white/80 text-2xl md:text-3xl font-medium mb-4">Your daily creative ritual.</p>
+        <p class="text-white/60 text-lg max-w-xl mx-auto mb-12 leading-relaxed">
+          You don't have to write about your feelings. Draw them.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white/20 hover:bg-white/30 backdrop-blur text-white font-semibold text-base transition-all border border-white/30">
+            🍎 App Store — Coming Soon
+          </button>
+          <button class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white/20 hover:bg-white/30 backdrop-blur text-white font-semibold text-base transition-all border border-white/30">
+            ▶ Google Play — Coming Soon
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-24 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="font-display font-bold tracking-tight text-4xl text-ink text-center mb-16 fade-up">What makes it different.</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="fade-up text-center">
+            <div class="w-16 h-16 rounded-2xl bg-mood-coral/10 flex items-center justify-center mx-auto mb-6 text-3xl">🎨</div>
+            <h3 class="font-display font-bold tracking-tight text-xl text-ink mb-3">Daily Prompts</h3>
+            <p class="text-sketch-gray leading-relaxed">A new sketch prompt every day. Something to react to, something to interpret your own way. You never start from nothing.</p>
+          </div>
+          <div class="fade-up text-center" style="transition-delay: 0.1s">
+            <div class="w-16 h-16 rounded-2xl bg-mood-marigold/20 flex items-center justify-center mx-auto mb-6 text-3xl">😊</div>
+            <h3 class="font-display font-bold tracking-tight text-xl text-ink mb-3">Tag Your Mood</h3>
+            <p class="text-sketch-gray leading-relaxed">Before you save, pick how you're feeling — Great, Good, Okay, Low, or Rough. Your sketches become a mood map over time.</p>
+          </div>
+          <div class="fade-up text-center" style="transition-delay: 0.2s">
+            <div class="w-16 h-16 rounded-2xl bg-mood-lavender/30 flex items-center justify-center mx-auto mb-6 text-3xl">🔥</div>
+            <h3 class="font-display font-bold tracking-tight text-xl text-ink mb-3">Build Your Streak</h3>
+            <p class="text-sketch-gray leading-relaxed">Draw every day, watch your streak grow. Miss one, no guilt — just pick it back up. The ritual compounds over time into something worth keeping.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="bg-mood-blush py-24 px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="font-display font-bold tracking-tight text-4xl text-ink text-center mb-16 fade-up">How it works.</h2>
+        <div class="space-y-12">
+          <div class="fade-up flex gap-8 items-start">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-mood-coral text-white font-bold text-lg flex items-center justify-center">1</div>
+            <div>
+              <h3 class="font-display font-bold tracking-tight text-xl text-ink mb-2">Get a prompt</h3>
+              <p class="text-sketch-gray leading-relaxed">Open the app. Today's prompt is waiting — a word, a feeling, a concept. Something loose enough to interpret, specific enough to be a starting point.</p>
+            </div>
+          </div>
+          <div class="fade-up flex gap-8 items-start" style="transition-delay: 0.1s">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-mood-marigold text-white font-bold text-lg flex items-center justify-center">2</div>
+            <div>
+              <h3 class="font-display font-bold tracking-tight text-xl text-ink mb-2">Tag your mood & sketch</h3>
+              <p class="text-sketch-gray leading-relaxed">Before your canvas opens, pick how you're feeling. Then draw — with expressive brushes, curated color palettes, and pinch-to-zoom. No rules, no pressure.</p>
+            </div>
+          </div>
+          <div class="fade-up flex gap-8 items-start" style="transition-delay: 0.2s">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-mood-lavender text-ink font-bold text-lg flex items-center justify-center">3</div>
+            <div>
+              <h3 class="font-display font-bold tracking-tight text-xl text-ink mb-2">Watch it grow</h3>
+              <p class="text-sketch-gray leading-relaxed">Each sketch joins your scrolling calendar gallery — tagged by mood, organized by month. Your streak keeps you coming back. Your archive makes it worth it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-24 px-6">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="font-display font-bold tracking-tight text-4xl text-ink text-center mb-4 fade-up">Simple pricing.</h2>
+        <p class="text-sketch-gray text-center mb-16 fade-up">Start free. Go pro when you're ready.</p>
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Free -->
+          <div class="fade-up bg-white rounded-2xl p-8 border border-light-rule">
+            <p class="text-sketch-gray text-sm font-medium mb-2">Free</p>
+            <p class="font-display font-bold tracking-tight text-4xl text-ink mb-1">$0</p>
+            <p class="text-sketch-gray text-sm mb-8">Forever free</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center gap-3 text-sm text-ink"><span class="text-mood-coral">✓</span> Daily prompt</li>
+              <li class="flex items-center gap-3 text-sm text-ink"><span class="text-mood-coral">✓</span> Mood tagging</li>
+              <li class="flex items-center gap-3 text-sm text-ink"><span class="text-mood-coral">✓</span> Streak counter</li>
+              <li class="flex items-center gap-3 text-sm text-ink"><span class="text-mood-coral">✓</span> Curated color palettes</li>
+              <li class="flex items-center gap-3 text-sm text-ink"><span class="text-mood-coral">✓</span> Scrolling gallery archive</li>
+              <li class="flex items-center gap-3 text-sm text-sketch-gray/50"><span>✗</span> Export (PDF/PNG)</li>
+              <li class="flex items-center gap-3 text-sm text-sketch-gray/50"><span>✗</span> Custom themes</li>
+            </ul>
+            <button class="w-full py-3 rounded-xl border border-light-rule text-sketch-gray font-semibold text-sm hover:border-mood-coral hover:text-mood-coral transition-colors">
+              Coming soon
+            </button>
+          </div>
+          <!-- Pro -->
+          <div class="fade-up bg-gradient-to-br from-mood-coral to-mood-marigold rounded-2xl p-8 text-white" style="transition-delay: 0.1s">
+            <p class="text-white/70 text-sm font-medium mb-2">Pro</p>
+            <p class="font-display font-bold tracking-tight text-4xl mb-1">$2.99<span class="text-xl font-normal text-white/70">/mo</span></p>
+            <p class="text-white/60 text-sm mb-8">or $19.99/yr — save 44%</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center gap-3 text-sm"><span class="text-white">✓</span> Everything in Free</li>
+              <li class="flex items-center gap-3 text-sm"><span class="text-white">✓</span> Unlimited archive</li>
+              <li class="flex items-center gap-3 text-sm"><span class="text-white">✓</span> Full prompt library</li>
+              <li class="flex items-center gap-3 text-sm"><span class="text-white">✓</span> Export to PDF & PNG</li>
+              <li class="flex items-center gap-3 text-sm"><span class="text-white">✓</span> Custom themes</li>
+              <li class="flex items-center gap-3 text-sm"><span class="text-white">✓</span> Early access to new features</li>
+            </ul>
+            <button class="w-full py-3 rounded-xl bg-white text-mood-coral font-semibold text-sm hover:bg-white/90 transition-colors">
+              Coming soon
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="bg-mood-plum py-24 px-6">
+      <div class="max-w-lg mx-auto text-center fade-up">
+        <h2 class="font-display font-bold tracking-tight text-4xl text-white mb-4">Be first to draw.</h2>
+        <p class="text-white/60 text-lg mb-10">Get notified when MoodSketch launches.</p>
+        <form action="https://formspree.io/f/REPLACE_ME" method="POST" class="flex flex-col sm:flex-row gap-3">
+          <input
+            type="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+            class="flex-1 px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-mood-coral text-base"
+          />
+          <button
+            type="submit"
+            class="px-8 py-4 rounded-xl bg-mood-coral hover:bg-mood-coral/80 text-white font-semibold text-base transition-colors whitespace-nowrap"
+          >
+            Notify me
+          </button>
+        </form>
+        <p class="text-white/30 text-sm mt-4">No spam. Unsubscribe anytime.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ink py-12 px-6">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <span class='font-display font-bold text-xl text-white/70'>MoodSketch</span>
+        <div class="flex items-center gap-8">
+          <a href="/" class="text-sm text-white/40 hover:text-white/80 transition-colors">Home</a>
+          <a href="/fieldsketch" class="text-sm text-white/40 hover:text-white/80 transition-colors">FieldSketch</a>
+        </div>
+        <p class="text-sm text-white/30">© 2026 SketchKit</p>
+      </div>
+    </footer>
+
+  </div>
+</Base>

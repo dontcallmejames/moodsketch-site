@@ -1,0 +1,34 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = 'MoodSketch — Your daily creative ritual. Draw your mood instead of writing about it.' } = Astro.props;
+---
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='description' content={description} />
+    <title>{title}</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link href='https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap' rel='stylesheet' />
+    <style>
+      html { scroll-behavior: smooth; }
+      * { box-sizing: border-box; }
+      .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+      .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+  </head>
+  <body class='font-sans text-ink bg-white antialiased'>
+    <slot />
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>
