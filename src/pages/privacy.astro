@@ -1,0 +1,63 @@
+---
+import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
+---
+<Base title="Privacy Policy — MoodSketch" description="MoodSketch privacy policy. We don't collect your data.">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-light-rule">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+      <Logo variant="dark" size={24} textSize="1rem" />
+      <a href="https://moodsketch.app" class="text-sm text-sketch-gray hover:text-ink transition-colors">← Back</a>
+    </div>
+  </nav>
+
+  <main class="max-w-2xl mx-auto px-6 pt-28 pb-20">
+    <h1 class="font-display text-4xl font-bold text-ink mb-2">Privacy Policy</h1>
+    <p class="text-sketch-gray mb-10">Last updated: February 26, 2026</p>
+
+    <div class="prose prose-gray max-w-none space-y-8 text-ink/80 leading-relaxed">
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink mb-3">The short version</h2>
+        <p>MoodSketch does not collect, transmit, or store any personal data. Everything you draw stays on your device.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink mb-3">What we collect</h2>
+        <p><strong>Nothing.</strong> MoodSketch stores your sketches and mood tags locally on your device using your browser's localStorage. No data is sent to any server. No account is required. No analytics are collected.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink mb-3">Local storage</h2>
+        <p>The app uses your device's local storage to save:</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>Your daily sketches (stored as image data)</li>
+          <li>Mood tags you've added to sketches</li>
+          <li>Your streak count and last draw date</li>
+          <li>Your onboarding status and reminder time preference</li>
+        </ul>
+        <p class="mt-3">This data never leaves your device. Uninstalling the app or clearing your browser data will delete it permanently.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink mb-3">Third-party services</h2>
+        <p>MoodSketch does not use any third-party analytics, advertising, or tracking services. We do not use cookies for tracking purposes.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink mb-3">Children's privacy</h2>
+        <p>MoodSketch does not collect personal information from anyone, including children under 13. The app is safe for all ages.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink mb-3">Changes to this policy</h2>
+        <p>If this policy changes, we'll update the date at the top of this page. Since we don't collect data, we don't anticipate meaningful changes.</p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-bold text-ink mb-3">Contact</h2>
+        <p>Questions? Email us at <a href="mailto:hello@sketchkit.app" class="text-mood-coral hover:underline">hello@sketchkit.app</a></p>
+      </section>
+
+    </div>
+  </main>
+</Base>
