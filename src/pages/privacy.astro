@@ -3,71 +3,71 @@ import Base from '../layouts/Base.astro';
 import Logo from '../components/Logo.astro';
 ---
 <Base title="Privacy Policy — MoodSketch" description="MoodSketch privacy policy. We don't collect your data.">
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-mood-warm-white/80 backdrop-blur-xl border-b border-mood-coral/8">
-    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-mood-warm-white/80 backdrop-blur-xl border-b border-mood-coral/[0.06]">
+    <div class="max-w-4xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
       <Logo variant="dark" size={24} textSize="0.875rem" />
-      <a href="/" class="text-sm text-sketch-gray hover:text-ink transition-colors flex items-center gap-1">
+      <a href="/" class="text-sm font-display text-sketch-gray hover:text-ink transition-colors duration-300 flex items-center gap-1.5">
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10 4L6 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Back
       </a>
     </div>
   </nav>
 
-  <main class="max-w-2xl mx-auto px-6 pt-28 pb-20">
-    <h1 class="font-mood text-4xl font-bold text-ink mb-2">Privacy Policy</h1>
-    <p class="text-sketch-gray mb-10">Last updated: February 26, 2026</p>
+  <main class="max-w-2xl mx-auto px-6 md:px-10 pt-32 pb-24">
+    <h1 class="font-mood font-bold text-4xl md:text-[2.8rem] text-ink mb-3 tracking-tight">Privacy Policy</h1>
+    <p class="text-sketch-gray mb-12 text-sm font-mono tracking-wide">Last updated: February 26, 2026</p>
 
-    <div class="prose prose-gray max-w-none space-y-8 text-ink/80 leading-relaxed">
+    <div class="space-y-10 text-ink/75 leading-[1.8]">
 
       <section>
-        <h2 class="font-mood text-xl font-bold text-ink mb-3">The short version</h2>
+        <h2 class="font-mood text-xl font-bold text-ink mb-4">The short version</h2>
         <p>MoodSketch does not collect, transmit, or store any personal data. Everything you draw stays on your device.</p>
       </section>
 
       <section>
-        <h2 class="font-mood text-xl font-bold text-ink mb-3">What we collect</h2>
-        <p><strong>Nothing.</strong> MoodSketch stores your sketches and mood tags locally on your device using your browser's localStorage. No data is sent to any server. No account is required. No analytics are collected.</p>
+        <h2 class="font-mood text-xl font-bold text-ink mb-4">What we collect</h2>
+        <p><strong class="text-ink">Nothing.</strong> MoodSketch stores your sketches and mood tags locally on your device using your browser's localStorage. No data is sent to any server. No account is required. No analytics are collected.</p>
       </section>
 
       <section>
-        <h2 class="font-mood text-xl font-bold text-ink mb-3">Local storage</h2>
+        <h2 class="font-mood text-xl font-bold text-ink mb-4">Local storage</h2>
         <p>The app uses your device's local storage to save:</p>
-        <ul class="list-disc pl-5 mt-2 space-y-1">
+        <ul class="list-disc pl-5 mt-3 space-y-1.5">
           <li>Your daily sketches (stored as image data)</li>
           <li>Mood tags you've added to sketches</li>
           <li>Your streak count and last draw date</li>
           <li>Your onboarding status and reminder time preference</li>
         </ul>
-        <p class="mt-3">This data never leaves your device. Uninstalling the app or clearing your browser data will delete it permanently.</p>
+        <p class="mt-4">This data never leaves your device. Uninstalling the app or clearing your browser data will delete it permanently.</p>
       </section>
 
       <section>
-        <h2 class="font-mood text-xl font-bold text-ink mb-3">Third-party services</h2>
+        <h2 class="font-mood text-xl font-bold text-ink mb-4">Third-party services</h2>
         <p>MoodSketch does not use any third-party analytics, advertising, or tracking services. We do not use cookies for tracking purposes.</p>
       </section>
 
       <section>
-        <h2 class="font-mood text-xl font-bold text-ink mb-3">Children's privacy</h2>
+        <h2 class="font-mood text-xl font-bold text-ink mb-4">Children's privacy</h2>
         <p>MoodSketch does not collect personal information from anyone, including children under 13. The app is safe for all ages.</p>
       </section>
 
       <section>
-        <h2 class="font-mood text-xl font-bold text-ink mb-3">Changes to this policy</h2>
+        <h2 class="font-mood text-xl font-bold text-ink mb-4">Changes to this policy</h2>
         <p>If this policy changes, we'll update the date at the top of this page. Since we don't collect data, we don't anticipate meaningful changes.</p>
       </section>
 
       <section>
-        <h2 class="font-mood text-xl font-bold text-ink mb-3">Contact</h2>
+        <h2 class="font-mood text-xl font-bold text-ink mb-4">Contact</h2>
         <p>Questions? Email us at <a href="mailto:hello@sketchkit.app" class="text-mood-coral hover:underline">hello@sketchkit.app</a></p>
       </section>
 
     </div>
   </main>
 
-  <footer class="bg-ink py-12 px-6 border-t border-white/5">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <Logo size={28} opacity="0.5" textSize="0.875rem" />
-      <p class="text-xs text-white/20 font-mono">&copy; 2026 SketchKit</p>
+  <footer class="bg-ink py-14 px-6 md:px-10 border-t border-white/[0.04]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <Logo size={26} opacity="0.4" textSize="0.85rem" />
+      <p class="text-[0.65rem] text-white/15 font-mono tracking-wider">&copy; 2026 SketchKit</p>
     </div>
   </footer>
 </Base>

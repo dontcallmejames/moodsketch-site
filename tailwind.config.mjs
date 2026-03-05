@@ -7,6 +7,7 @@ export default {
         display: ['DM Sans', ...fontFamily.sans],
         sans: ['Inter', ...fontFamily.sans],
         mood: ['Syne', ...fontFamily.sans],
+        mono: ['JetBrains Mono', 'monospace'],
       },
       colors: {
         ink: '#1C1C2E',
@@ -21,16 +22,7 @@ export default {
         'mood-warm-white': '#FFF8F0',
         'mood-lavender': '#C3B1E1',
         'mood-soft-blush': '#FFE4E1',
-      },
-      animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'float-slow': 'float 8s ease-in-out infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
-        },
+        'mood-rust': '#78320F',
       },
     },
   },
