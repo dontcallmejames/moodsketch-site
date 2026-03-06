@@ -31,6 +31,12 @@ const { title, description = 'MoodSketch — Draw your mood instead of writing a
 
       html { scroll-behavior: smooth; }
       *, *::before, *::after { box-sizing: border-box; }
+      body {
+        line-height: 1.5;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
 
       /* Noise texture */
       .noise::before {
