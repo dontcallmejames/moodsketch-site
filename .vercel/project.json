@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_vb1TNmWlMukVspQlD4qtmxKdCYU9",
+  "orgId": "Ewxb6pZwsXRkTNOrUG4Il0Ah",
+  "projectName": "moodsketch-site",
+  "settings": {
+    "createdAt": 1772144117054,
+    "framework": "astro",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}
