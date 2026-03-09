@@ -15,7 +15,7 @@ import Logo from '../components/Logo.astro';
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10 4L6 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           SketchKit
         </a>
-        <span class="hidden sm:inline font-mood font-bold text-ink tracking-tight text-lg leading-[1.1]">MoodSketch</span>
+        <span class="hidden sm:inline font-mood font-bold text-ink tracking-tight text-lg leading-normal">MoodSketch</span>
         <a href="https://fieldsketch.app" class="text-xs sm:text-sm font-display font-medium text-sketch-gray hover:text-ink transition-colors duration-300 flex items-center gap-1.5 whitespace-nowrap">
           FieldSketch
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -24,7 +24,7 @@ import Logo from '../components/Logo.astro';
     </nav>
 
     <!-- ===== HERO ===== -->
-    <section class="noise relative text-white pt-32 pb-44 px-6 md:px-10 overflow-hidden" style="background: linear-gradient(135deg, #F5764A 0%, #E8623A 35%, #D94420 70%, #b33a1c 100%);">
+    <section class="noise relative text-white pt-32 pb-44 px-6 md:px-10 overflow-clip" style="background: linear-gradient(135deg, #F5764A 0%, #E8623A 35%, #D94420 70%, #b33a1c 100%);">
       <!-- Layered painterly atmosphere -->
       <div class="absolute top-0 left-0 w-full h-full">
         <div class="absolute top-[-5%] right-[-8%] w-[50%] h-[55%] rounded-full bg-white/[0.04] blur-[100px]"></div>
@@ -42,14 +42,14 @@ import Logo from '../components/Logo.astro';
       <svg class="absolute top-[40%] left-[6%] text-mood-lavender/[0.05]" width="8" height="8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
 
       <div class="max-w-4xl mx-auto text-center hero-stagger relative">
-        <p class="font-mono text-[0.65rem] tracking-[0.35em] uppercase text-white/25 mb-12">For iPhone & Android</p>
+        <p class="font-mono text-[0.7rem] tracking-[0.25em] uppercase text-white/40 mb-12">For iPhone & Android</p>
 
         <div class="flex justify-center mb-10">
           <img src="/moodsketch-icon.png" alt="MoodSketch app icon"
                class="w-28 h-28 rounded-[28%] shadow-2xl shadow-black/25 ring-4 ring-white/[0.08]" />
         </div>
 
-        <h1 class="font-mood font-extrabold tracking-[-0.015em] text-[clamp(2.75rem,12vw,7.5rem)] leading-[0.94] mb-8">
+        <h1 class="font-mood font-extrabold tracking-[-0.015em] text-[clamp(2.75rem,10vw,7rem)] leading-[1.05] mb-8">
           MoodSketch
         </h1>
 
@@ -77,7 +77,7 @@ import Logo from '../components/Logo.astro';
     <section class="py-32 px-6 md:px-10 bg-mood-warm-white">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-20 reveal">
-          <p class="font-mono text-[0.65rem] tracking-[0.35em] uppercase text-mood-coral mb-5">Features</p>
+          <p class="font-mono text-[0.7rem] tracking-[0.25em] uppercase text-mood-coral mb-5">Features</p>
           <h2 class="font-mood font-bold tracking-[-0.02em] text-4xl md:text-[3.2rem] text-ink leading-tight">What makes it <span class="brush-underline">different.</span></h2>
         </div>
         <div class="grid md:grid-cols-3 gap-12 stagger-children">
@@ -117,7 +117,7 @@ import Logo from '../components/Logo.astro';
 
       <div class="max-w-3xl mx-auto relative">
         <div class="text-center mb-20 reveal">
-          <p class="font-mono text-[0.65rem] tracking-[0.35em] uppercase text-mood-coral mb-5">The Ritual</p>
+          <p class="font-mono text-[0.7rem] tracking-[0.25em] uppercase text-mood-coral mb-5">The Ritual</p>
           <h2 class="font-mood font-bold tracking-[-0.02em] text-4xl md:text-[3.2rem] text-ink leading-tight">How it works.</h2>
         </div>
         <div class="space-y-20">
@@ -163,7 +163,7 @@ import Logo from '../components/Logo.astro';
     <section class="py-32 px-6 md:px-10 bg-mood-warm-white">
       <div class="max-w-3xl mx-auto">
         <div class="text-center mb-20 reveal">
-          <p class="font-mono text-[0.65rem] tracking-[0.35em] uppercase text-mood-coral mb-5">Pricing</p>
+          <p class="font-mono text-[0.7rem] tracking-[0.25em] uppercase text-mood-coral mb-5">Pricing</p>
           <h2 class="font-mood font-bold tracking-[-0.02em] text-4xl md:text-[3.2rem] text-ink mb-4 leading-tight">Simple pricing.</h2>
           <p class="text-sketch-gray text-lg">Start free. Go pro when you're ready.</p>
         </div>
@@ -171,7 +171,7 @@ import Logo from '../components/Logo.astro';
           <!-- Free -->
           <div class="reveal rounded-[1.5rem] p-9 border-2 border-light-rule bg-white">
             <p class="text-sketch-gray text-sm font-medium mb-3">Free</p>
-            <p class="font-mood font-extrabold tracking-tight text-[3.5rem] text-ink leading-[0.95] mb-1">$0</p>
+            <p class="font-mood font-extrabold tracking-tight text-[3.5rem] text-ink leading-[1.1] mb-1">$0</p>
             <p class="text-sketch-gray text-sm mb-9">Forever free</p>
             <ul class="space-y-3.5 mb-9">
               <li class="flex items-center gap-3 text-sm text-ink"><span class="text-mood-coral">&#10003;</span> Daily prompt</li>
@@ -187,11 +187,11 @@ import Logo from '../components/Logo.astro';
             </button>
           </div>
           <!-- Pro -->
-          <div class="reveal relative overflow-hidden rounded-[1.5rem] p-9 text-white" style="background: linear-gradient(135deg, #F5764A 0%, #E8623A 40%, #D94420 100%); transition-delay: 0.1s">
+          <div class="reveal relative overflow-clip rounded-[1.5rem] p-9 text-white" style="background: linear-gradient(135deg, #F5764A 0%, #E8623A 40%, #D94420 100%); transition-delay: 0.1s">
             <div class="absolute top-0 right-0 w-44 h-44 bg-white/[0.04] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             <div class="relative">
               <p class="text-white/60 text-sm font-medium mb-3">Pro</p>
-              <p class="font-mood font-extrabold tracking-tight text-[3.5rem] leading-[0.95] mb-1">$2.99<span class="text-2xl font-normal text-white/50">/mo</span></p>
+              <p class="font-mood font-extrabold tracking-tight text-[3.5rem] leading-[1.1] mb-1">$2.99<span class="text-2xl font-normal text-white/50">/mo</span></p>
               <p class="text-white/40 text-sm mb-9">or $19.99/yr — save 44%</p>
               <ul class="space-y-3.5 mb-9">
                 <li class="flex items-center gap-3 text-sm"><span>&#10003;</span> Everything in Free</li>
@@ -211,7 +211,7 @@ import Logo from '../components/Logo.astro';
     </section>
 
     <!-- ===== EMAIL CAPTURE ===== -->
-    <section class="noise py-32 px-6 md:px-10 relative overflow-hidden" style="background: var(--mood-plum);">
+    <section class="noise py-32 px-6 md:px-10 relative overflow-clip" style="background: var(--mood-plum);">
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-mood-coral/[0.08] rounded-full blur-[130px]"></div>
       <svg class="absolute bottom-12 left-12 w-20 h-20 text-white/[0.02]" viewBox="0 0 80 80" fill="none">
         <path d="M16 40c16-32 48-32 48 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
@@ -220,7 +220,7 @@ import Logo from '../components/Logo.astro';
         <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 5"/>
       </svg>
       <div class="max-w-lg mx-auto text-center reveal relative">
-        <p class="font-mono text-[0.65rem] tracking-[0.35em] uppercase text-mood-coral/35 mb-8">Waitlist</p>
+        <p class="font-mono text-[0.7rem] tracking-[0.25em] uppercase text-mood-coral/35 mb-8">Waitlist</p>
         <h2 class="font-mood font-bold tracking-[-0.02em] text-4xl md:text-[3.2rem] text-white mb-5 leading-tight">Be first to draw.</h2>
         <p class="text-white/30 text-lg mb-14 leading-relaxed">Get notified when MoodSketch launches.</p>
         <form action="https://formspree.io/f/REPLACE_ME" method="POST" class="flex flex-col sm:flex-row gap-3 mb-5">
@@ -243,7 +243,7 @@ import Logo from '../components/Logo.astro';
           <a href="https://fieldsketch.app" class="text-sm text-white/25 hover:text-white/50 transition-colors duration-300">FieldSketch</a>
           <a href="/privacy" class="text-sm text-white/25 hover:text-white/50 transition-colors duration-300">Privacy</a>
         </div>
-        <p class="text-[0.65rem] text-white/15 font-mono tracking-wider">&copy; 2026 SketchKit</p>
+        <p class="text-xs text-white/15 font-mono tracking-wider">&copy; 2026 SketchKit</p>
       </div>
     </footer>
 

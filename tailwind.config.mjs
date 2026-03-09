@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['DM Sans', ...fontFamily.sans],
-        sans: ['Inter', ...fontFamily.sans],
-        mood: ['Syne', ...fontFamily.sans],
-        mono: ['JetBrains Mono', 'monospace'],
+        display: ['DM Sans', 'system-ui', ...fontFamily.sans],
+        sans: ['Inter', 'system-ui', ...fontFamily.sans],
+        mood: ['Syne', 'system-ui', ...fontFamily.sans],
+        mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
       },
       colors: {
         ink: '#1C1C2E',
